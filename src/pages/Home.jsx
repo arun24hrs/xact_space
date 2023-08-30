@@ -25,10 +25,10 @@ const Home = () => {
     // console.log(window.scrollY)
     // console.log(window.innerHeight)
     // console.log(document.documentElement.scrollHeight)
-    if(window.scrollY+window.innerHeight===document.documentElement.scrollHeight){
-      if(page<34){
-        setPage((prev)=>prev+1)
-      }
+    if(window.scrollY+window.innerHeight>=document.documentElement.scrollHeight-10){
+        if(page<34){
+          setPage((prev)=>prev+1)
+        }
     }
   }
   console.log(page)
